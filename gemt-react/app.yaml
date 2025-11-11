@@ -1,1 +1,8 @@
-command: ["npm", "start"]
+command: ["bash", "start.sh"]
+env:
+  - name: DEBUG
+    value: "vite:*"
+  - name: NODE_ENV
+    value: "production"
+  - name: VITE_LOG_LEVEL
+    value: "info"
